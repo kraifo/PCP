@@ -1,0 +1,496 @@
+<!DOCTYPE CESALIGN PUBLIC "-//CES//DTD cesAlign//EN" []>
+<cesAlign VERSION="1.14"  type="sent" fromDoc="./data/Bovary/src/seg/bovary13.fr.txt" toDoc="./data/Bovary/src/seg/bovary13.it.txt">
+<linkList>
+<linkGrp>
+<link xtargets="1 2;1" certainty="0.709696"></link>
+<link xtargets="3;2" certainty="-0.782301"></link>
+<link xtargets="4;3" certainty="-0.716628"></link>
+<link xtargets="5;4" certainty="0.27943"></link>
+<link xtargets="6;5" certainty="2.66038"></link>
+<link xtargets="7;6" certainty="1.91442"></link>
+<link xtargets="8 9;7" certainty="5.55865"></link>
+<link xtargets="10;8" certainty="3.22968"></link>
+<link xtargets="11;9" certainty="1.08365"></link>
+<link xtargets="12;10" certainty="6.17402"></link>
+<link xtargets="13;11 12" certainty="6.34304"></link>
+<link xtargets="14;13 14" certainty="9.54005"></link>
+<link xtargets="15;15" certainty="2.52601"></link>
+<link xtargets="16;16" certainty="2.14489"></link>
+<link xtargets="17;17" certainty="-0.10813"></link>
+<link xtargets="18;18" certainty="6.8779"></link>
+<link xtargets="19;19" certainty="3.13712"></link>
+<link xtargets="20;20" certainty="2.66742"></link>
+<link xtargets="21;21" certainty="0.925026"></link>
+<link xtargets="22;22" certainty="5.01966"></link>
+<link xtargets="23;23" certainty="8.04516"></link>
+<link xtargets="24 25;24" certainty="5.349"></link>
+<link xtargets="26;25" certainty="5.75183"></link>
+<link xtargets="27;26" certainty="2.22763"></link>
+<link xtargets="28;27" certainty="1.02551"></link>
+<link xtargets="29;28" certainty="1.13737"></link>
+<link xtargets="30;29" certainty="1.26266"></link>
+<link xtargets="31;30" certainty="1.08882"></link>
+<link xtargets="32;31" certainty="1.3778"></link>
+<link xtargets="33;32" certainty="2.06677"></link>
+<link xtargets="34;33" certainty="2.83814"></link>
+<link xtargets="35;34" certainty="3.25366"></link>
+<link xtargets="36;35" certainty="4.64854"></link>
+<link xtargets="37;36" certainty="2.08039"></link>
+<link xtargets="38;37" certainty="2.27846"></link>
+<link xtargets="39;38" certainty="1.84885"></link>
+<link xtargets="40;39" certainty="0.466873"></link>
+<link xtargets="41;40" certainty="1.66006"></link>
+<link xtargets="42 43;41" certainty="4.15761"></link>
+<link xtargets="44;42" certainty="3.68995"></link>
+<link xtargets="45;43" certainty="0.261538"></link>
+<link xtargets="46 47;44" certainty="7.3421"></link>
+<link xtargets="48 49;45" certainty="5.15749"></link>
+<link xtargets="50;46" certainty="6.85424"></link>
+<link xtargets="51;47" certainty="1.8759"></link>
+<link xtargets="52;48" certainty="0.783165"></link>
+<link xtargets="53;49" certainty="0.669029"></link>
+<link xtargets="54;50 51" certainty="3.81043"></link>
+<link xtargets="55;52" certainty="-0.89626"></link>
+<link xtargets="56;53" certainty="1.67582"></link>
+<link xtargets="57;54" certainty="0.746389"></link>
+<link xtargets="58;55" certainty="0.361588"></link>
+<link xtargets="59;56" certainty="0.422115"></link>
+<link xtargets="60 61;57" certainty="3.86365"></link>
+<link xtargets="62;58" certainty="1.24662"></link>
+<link xtargets="63;59" certainty="1.12939"></link>
+<link xtargets="64;60" certainty="0.698304"></link>
+<link xtargets="65;61" certainty="7.31249"></link>
+<link xtargets="66;62" certainty="1.49944"></link>
+<link xtargets="67;63" certainty="5.93557"></link>
+<link xtargets="68;64" certainty="4.25645"></link>
+<link xtargets="69;65" certainty="3.40033"></link>
+<link xtargets="70;66" certainty="2.91755"></link>
+<link xtargets="71;67" certainty="2.58699"></link>
+<link xtargets="72;68" certainty="6.90646"></link>
+<link xtargets="73;69" certainty="5.77174"></link>
+<link xtargets="74;70" certainty="3.31694"></link>
+<link xtargets="75;71" certainty="1.63564"></link>
+<link xtargets="76;72" certainty="3.00697"></link>
+<link xtargets="77;73" certainty="8.33402"></link>
+<link xtargets="78;74" certainty="4.36979"></link>
+<link xtargets="79;75" certainty="3.78995"></link>
+<link xtargets="80 81;76" certainty="5.5348"></link>
+<link xtargets="82;77" certainty="5.60167"></link>
+<link xtargets="83;78" certainty="6.40653"></link>
+<link xtargets="84;79" certainty="1.15177"></link>
+<link xtargets="85;80" certainty="2.20436"></link>
+<link xtargets="86;81" certainty="1.61835"></link>
+<link xtargets="87;82" certainty="3.37217"></link>
+<link xtargets="88;83" certainty="10.4435"></link>
+<link xtargets="89;84" certainty="-0.244018"></link>
+<link xtargets="90;85" certainty="2.57461"></link>
+<link xtargets="91 92;86" certainty="9.51171"></link>
+<link xtargets="93;87" certainty="3.69968"></link>
+<link xtargets="94;88" certainty="2.00143"></link>
+<link xtargets="95;89" certainty="2.54583"></link>
+<link xtargets="96 97;90" certainty="7.90748"></link>
+<link xtargets="98;91" certainty="3.84173"></link>
+<link xtargets="99;92 93" certainty="7.01661"></link>
+<link xtargets="100;94" certainty="3.08161"></link>
+<link xtargets="101;95" certainty="2.0339"></link>
+<link xtargets="102;96" certainty="2.78028"></link>
+<link xtargets="103;97" certainty="2.7663"></link>
+<link xtargets="104;98" certainty="0.756426"></link>
+<link xtargets="105;99" certainty="4.41924"></link>
+<link xtargets="106;100" certainty="8.84829"></link>
+<link xtargets="107;101" certainty="1.387"></link>
+<link xtargets="108;102" certainty="1.64651"></link>
+<link xtargets="109;103" certainty="2.48093"></link>
+<link xtargets="110;104" certainty="1.81332"></link>
+<link xtargets="111;105" certainty="2.22336"></link>
+<link xtargets="112;106" certainty="4.27134"></link>
+<link xtargets="113;107" certainty="3.57527"></link>
+<link xtargets="114;108" certainty="1.90051"></link>
+<link xtargets="115;109" certainty="2.23"></link>
+<link xtargets="116 117;110" certainty="7.45563"></link>
+<link xtargets="118;111" certainty="1.35444"></link>
+<link xtargets="119;112" certainty="2.38094"></link>
+<link xtargets="120;113" certainty="3.95036"></link>
+<link xtargets="121;114" certainty="-0.131338"></link>
+<link xtargets="122;115" certainty="1.00395"></link>
+<link xtargets="123;116" certainty="5.26444"></link>
+<link xtargets="124;117" certainty="-0.0897882"></link>
+<link xtargets="125;118" certainty="-0.394647"></link>
+<link xtargets="126;119" certainty="1.42973"></link>
+<link xtargets="127;120" certainty="1.62365"></link>
+<link xtargets="128;121 122" certainty="9.78717"></link>
+<link xtargets="129;123" certainty="3.75633"></link>
+<link xtargets="130;124" certainty="3.73297"></link>
+<link xtargets="131;125" certainty="1.74825"></link>
+<link xtargets="132;126" certainty="3.05279"></link>
+<link xtargets="133;127" certainty="0.893347"></link>
+<link xtargets="134;128" certainty="5.40174"></link>
+<link xtargets="135;129" certainty="3.58863"></link>
+<link xtargets="136;130" certainty="7.20991"></link>
+<link xtargets="137;131" certainty="1.20979"></link>
+<link xtargets="138 139;132" certainty="12.4595"></link>
+<link xtargets="140;133" certainty="0.907677"></link>
+<link xtargets="141;134" certainty="3.04635"></link>
+<link xtargets="142;135" certainty="2.81714"></link>
+<link xtargets="143;136" certainty="4.81615"></link>
+<link xtargets="144;137" certainty="5.72745"></link>
+<link xtargets="145;138" certainty="4.16005"></link>
+<link xtargets="146;139" certainty="5.71165"></link>
+<link xtargets="147;140" certainty="2.7444"></link>
+<link xtargets="148;141" certainty="-1.18139"></link>
+<link xtargets="149;142" certainty="1.06847"></link>
+<link xtargets="150;143" certainty="1.96689"></link>
+<link xtargets="151;144" certainty="0.275014"></link>
+<link xtargets="152;145" certainty="1.35055"></link>
+<link xtargets="153;146" certainty="1.18368"></link>
+<link xtargets="154;147" certainty="0.327563"></link>
+<link xtargets="155;148" certainty="1.79264"></link>
+<link xtargets="156;149" certainty="3.17468"></link>
+<link xtargets="157;150" certainty="5.45357"></link>
+<link xtargets="158;151" certainty="2.65259"></link>
+<link xtargets="159;152" certainty="7.23239"></link>
+<link xtargets="160;153" certainty="2.24653"></link>
+<link xtargets="161;154" certainty="0.900463"></link>
+<link xtargets="162;155" certainty="2.23881"></link>
+<link xtargets="163;156" certainty="3.24449"></link>
+<link xtargets="164;157" certainty="1.68283"></link>
+<link xtargets="165;158" certainty="2.73254"></link>
+<link xtargets="166;159 160" certainty="4.0688"></link>
+<link xtargets="167;161" certainty="5.15107"></link>
+<link xtargets="168;162" certainty="-0.223248"></link>
+<link xtargets="169;163" certainty="3.58204"></link>
+<link xtargets="170;164" certainty="2.36238"></link>
+<link xtargets="171;165" certainty="1.66188"></link>
+<link xtargets="172;166" certainty="1.48965"></link>
+<link xtargets="173;167" certainty="0.456409"></link>
+<link xtargets="174;168" certainty="1.53871"></link>
+<link xtargets="175;169" certainty="-0.800367"></link>
+<link xtargets="176;170" certainty="1.67818"></link>
+<link xtargets="177;171" certainty="2.36861"></link>
+<link xtargets="178;172" certainty="3.31101"></link>
+<link xtargets="179;173" certainty="0.905676"></link>
+<link xtargets="180;174" certainty="1.14432"></link>
+<link xtargets="181;175" certainty="2.36684"></link>
+<link xtargets="182;176" certainty="2.47012"></link>
+<link xtargets="183;177" certainty="3.97966"></link>
+<link xtargets="184;178" certainty="2.77473"></link>
+<link xtargets="185;179" certainty="1.33806"></link>
+<link xtargets="186;180" certainty="4.27576"></link>
+<link xtargets="187;181 182" certainty="5.27669"></link>
+<link xtargets="188;183" certainty="3.54798"></link>
+<link xtargets="189;184" certainty="2.98935"></link>
+<link xtargets="190;185" certainty="1.59848"></link>
+<link xtargets="191 192;186" certainty="5.31264"></link>
+<link xtargets="193;187" certainty="4.60059"></link>
+<link xtargets="194;188" certainty="1.70336"></link>
+<link xtargets="195;189" certainty="1.56107"></link>
+<link xtargets="196;190" certainty="1.90743"></link>
+<link xtargets="197;191" certainty="0.265558"></link>
+<link xtargets="198;192" certainty="3.34198"></link>
+<link xtargets="199;193" certainty="3.83535"></link>
+<link xtargets="200;194" certainty="1.07396"></link>
+<link xtargets="201;195" certainty="0.973892"></link>
+<link xtargets="202;196" certainty="2.62214"></link>
+<link xtargets="203;197" certainty="1.92421"></link>
+<link xtargets="204;198" certainty="3.01603"></link>
+<link xtargets="205;199" certainty="1.60547"></link>
+<link xtargets="206;200" certainty="1.21488"></link>
+<link xtargets="207;201" certainty="3.31633"></link>
+<link xtargets="208;202" certainty="-1.12559"></link>
+<link xtargets="209;203" certainty="0.907677"></link>
+<link xtargets="210;204" certainty="0.888751"></link>
+<link xtargets="211 212;205" certainty="3.02362"></link>
+<link xtargets="213;206" certainty="4.27158"></link>
+<link xtargets="214;207" certainty="-0.943713"></link>
+<link xtargets="215;208" certainty="2.81393"></link>
+<link xtargets="216;209" certainty="5.97469"></link>
+<link xtargets="217;210" certainty="1.02241"></link>
+<link xtargets="218;211" certainty="4.46702"></link>
+<link xtargets="219;212" certainty="3.27941"></link>
+<link xtargets="220 221;213 214" certainty="16.3561"></link>
+<link xtargets="222;215" certainty="2.22374"></link>
+<link xtargets="223;216" certainty="3.35251"></link>
+<link xtargets="224;217" certainty="0.914875"></link>
+<link xtargets="225;218" certainty="1.22139"></link>
+<link xtargets="226;219" certainty="0.735373"></link>
+<link xtargets="227;220" certainty="1.34724"></link>
+<link xtargets="228;221" certainty="1.02519"></link>
+<link xtargets="229;222" certainty="4.39628"></link>
+<link xtargets="230;223" certainty="0.338294"></link>
+<link xtargets="231;224" certainty="3.14737"></link>
+<link xtargets="232 233;225" certainty="3.63569"></link>
+<link xtargets="234;226" certainty="5.16939"></link>
+<link xtargets="235;227" certainty="1.33806"></link>
+<link xtargets="236;228" certainty="-0.388957"></link>
+<link xtargets="237;229" certainty="1.22408"></link>
+<link xtargets="238;230" certainty="-0.609002"></link>
+<link xtargets="239;231" certainty="1.31564"></link>
+<link xtargets="240;232" certainty="-0.272357"></link>
+<link xtargets="241;233" certainty="5.25338"></link>
+<link xtargets="242;234" certainty="1.68629"></link>
+<link xtargets="243;235" certainty="5.37468"></link>
+<link xtargets="244;236" certainty="4.99245"></link>
+<link xtargets="245;237 238" certainty="7.41299"></link>
+<link xtargets="246;239" certainty="2.90649"></link>
+<link xtargets="247;240" certainty="2.26488"></link>
+<link xtargets="248;241 242" certainty="8.70205"></link>
+<link xtargets="249;243" certainty="0.617996"></link>
+<link xtargets="250;244" certainty="3.84555"></link>
+<link xtargets="251;245" certainty="4.46912"></link>
+<link xtargets="252;246" certainty="4.35997"></link>
+<link xtargets="253;247" certainty="5.81553"></link>
+<link xtargets="254;248" certainty="0.596596"></link>
+<link xtargets="255;249" certainty="-0.606788"></link>
+<link xtargets="256;250" certainty="3.64961"></link>
+<link xtargets="257;251" certainty="2.91376"></link>
+<link xtargets="258;252" certainty="5.80475"></link>
+<link xtargets="259 260;253" certainty="6.1006"></link>
+<link xtargets="261;254" certainty="2.63524"></link>
+<link xtargets="262;255" certainty="0.5675"></link>
+<link xtargets="263;256" certainty="2.23423"></link>
+<link xtargets="264;257" certainty="3.87846"></link>
+<link xtargets="265;258" certainty="1.7329"></link>
+<link xtargets="266;259" certainty="1.69794"></link>
+<link xtargets="267;260" certainty="1.87304"></link>
+<link xtargets="268;261" certainty="3.03164"></link>
+<link xtargets="269;262" certainty="0.211515"></link>
+<link xtargets="270;263" certainty="3.77295"></link>
+<link xtargets="271;264" certainty="3.76553"></link>
+<link xtargets="272;265" certainty="2.50631"></link>
+<link xtargets="273;266" certainty="4.17653"></link>
+<link xtargets="274;267" certainty="7.389"></link>
+<link xtargets="275;268" certainty="-0.354348"></link>
+<link xtargets="276;" certainty="2.30252"></link>
+<link xtargets="277;269" certainty="1.79291"></link>
+<link xtargets="278;270" certainty="4.03919"></link>
+<link xtargets="279;271" certainty="5.07313"></link>
+<link xtargets="280;272" certainty="1.37291"></link>
+<link xtargets="281;273" certainty="4.25513"></link>
+<link xtargets="282;274" certainty="5.80418"></link>
+<link xtargets="283 284;275" certainty="6.78812"></link>
+<link xtargets="285;276" certainty="3.9483"></link>
+<link xtargets="286;277" certainty="0.615463"></link>
+<link xtargets="287;" certainty="3.02182"></link>
+<link xtargets="288;278" certainty="0.239164"></link>
+<link xtargets="289 290;279" certainty="7.01236"></link>
+<link xtargets="291;280" certainty="2.46228"></link>
+<link xtargets="292 293;281" certainty="3.81409"></link>
+<link xtargets="294 295;282" certainty="9.87592"></link>
+<link xtargets="296;283" certainty="6.01401"></link>
+<link xtargets="297;284" certainty="1.12837"></link>
+<link xtargets="298;285" certainty="4.29301"></link>
+<link xtargets="299;286" certainty="1.78572"></link>
+<link xtargets="300;287" certainty="1.39475"></link>
+<link xtargets="301;288" certainty="2.47517"></link>
+<link xtargets="302;289" certainty="2.50728"></link>
+<link xtargets="303;290" certainty="3.83729"></link>
+<link xtargets="304;291" certainty="4.21929"></link>
+<link xtargets="305;292" certainty="0.363623"></link>
+<link xtargets="306;293" certainty="3.44065"></link>
+<link xtargets="307;294" certainty="2.20093"></link>
+<link xtargets="308;295" certainty="4.27933"></link>
+<link xtargets="309;296" certainty="2.26425"></link>
+<link xtargets="310;297" certainty="1.0099"></link>
+<link xtargets="311;298" certainty="1.79477"></link>
+<link xtargets="312;299" certainty="5.79825"></link>
+<link xtargets="313;300" certainty="4.68919"></link>
+<link xtargets="314;301" certainty="1.12902"></link>
+<link xtargets="315;302" certainty="1.7083"></link>
+<link xtargets="316;303" certainty="4.78302"></link>
+<link xtargets="317 318;304" certainty="7.0271"></link>
+<link xtargets="319;305" certainty="0.115603"></link>
+<link xtargets="320;306" certainty="0.440202"></link>
+<link xtargets="321;307" certainty="5.76738"></link>
+<link xtargets="322;308" certainty="0.975777"></link>
+<link xtargets="323;309 310" certainty="7.8509"></link>
+<link xtargets="324;311" certainty="0.22301"></link>
+<link xtargets="325;312" certainty="0.464889"></link>
+<link xtargets="326;313" certainty="0.482913"></link>
+<link xtargets="327;314" certainty="1.40624"></link>
+<link xtargets="328;315" certainty="2.56395"></link>
+<link xtargets="329;316" certainty="2.87343"></link>
+<link xtargets="330;317" certainty="2.96395"></link>
+<link xtargets="331;318" certainty="6.05163"></link>
+<link xtargets="332;319" certainty="0.22301"></link>
+<link xtargets="333;320" certainty="2.50257"></link>
+<link xtargets="334;321" certainty="1.17586"></link>
+<link xtargets="335;322" certainty="1.57192"></link>
+<link xtargets="336;323" certainty="0.787706"></link>
+<link xtargets="337;324" certainty="0.993205"></link>
+<link xtargets="338;325" certainty="0.464889"></link>
+<link xtargets="339;326" certainty="3.94596"></link>
+<link xtargets="340;327" certainty="4.23158"></link>
+<link xtargets="341;328" certainty="4.62964"></link>
+<link xtargets="342;329" certainty="-0.828377"></link>
+<link xtargets="343;330" certainty="5.00329"></link>
+<link xtargets="344;" certainty="2.75321"></link>
+<link xtargets="345;331" certainty="3.64563"></link>
+<link xtargets="346 347;332" certainty="3.63736"></link>
+<link xtargets="348;333" certainty="2.25843"></link>
+<link xtargets="349;334" certainty="4.22945"></link>
+<link xtargets="350 351;335" certainty="7.0264"></link>
+<link xtargets="352;336" certainty="2.37172"></link>
+<link xtargets="353;337" certainty="-1.14197"></link>
+<link xtargets="354;338" certainty="-0.655376"></link>
+<link xtargets="355;339" certainty="2.23908"></link>
+<link xtargets="356;340" certainty="2.75437"></link>
+<link xtargets="357 358;341" certainty="9.27603"></link>
+<link xtargets="359;342" certainty="1.37478"></link>
+<link xtargets="360;343" certainty="1.52333"></link>
+<link xtargets="361;344" certainty="3.86697"></link>
+<link xtargets="362;345" certainty="1.56107"></link>
+<link xtargets="363;346" certainty="5.11415"></link>
+<link xtargets="364;347" certainty="-0.354348"></link>
+<link xtargets="365 366;348" certainty="3.70287"></link>
+<link xtargets="367;349" certainty="2.35066"></link>
+<link xtargets="368;350" certainty="-0.2842"></link>
+<link xtargets="369;351" certainty="1.36017"></link>
+<link xtargets="370;352" certainty="1.41156"></link>
+<link xtargets="371;353" certainty="6.37806"></link>
+<link xtargets="372;354" certainty="0.446019"></link>
+<link xtargets="373;" certainty="2.56875"></link>
+<link xtargets="374;355" certainty="1.71373"></link>
+<link xtargets="375;356" certainty="-0.441333"></link>
+<link xtargets="376;357" certainty="1.16741"></link>
+<link xtargets="377;358" certainty="0.774754"></link>
+<link xtargets="378;359" certainty="1.40668"></link>
+<link xtargets="379;360" certainty="2.60912"></link>
+<link xtargets="380;361" certainty="1.68145"></link>
+<link xtargets="381;362" certainty="1.15319"></link>
+<link xtargets="382;363" certainty="0.258455"></link>
+<link xtargets="383;364" certainty="0.928579"></link>
+<link xtargets="384;365" certainty="-0.0226357"></link>
+<link xtargets="385;366" certainty="1.00159"></link>
+<link xtargets="386;367" certainty="1.14602"></link>
+<link xtargets="387 388;368" certainty="5.37009"></link>
+<link xtargets="389 390;369" certainty="6.49427"></link>
+<link xtargets="391;370" certainty="4.71478"></link>
+<link xtargets="392;371" certainty="0.920014"></link>
+<link xtargets="393;372" certainty="0.483477"></link>
+<link xtargets="394;373" certainty="2.71027"></link>
+<link xtargets="395 396;374" certainty="12.2753"></link>
+<link xtargets="397;375" certainty="1.30277"></link>
+<link xtargets="398;376" certainty="4.95905"></link>
+<link xtargets="399;377" certainty="0.385627"></link>
+<link xtargets="400;378" certainty="-0.436857"></link>
+<link xtargets="401;379" certainty="0.685752"></link>
+<link xtargets="402;380" certainty="3.65473"></link>
+<link xtargets="403;381" certainty="1.15479"></link>
+<link xtargets="404;382" certainty="3.70588"></link>
+<link xtargets="405;383" certainty="-0.314605"></link>
+<link xtargets="406;384" certainty="-0.290006"></link>
+<link xtargets="407;385" certainty="1.46358"></link>
+<link xtargets="408;386" certainty="2.73851"></link>
+<link xtargets="409;387" certainty="11.3231"></link>
+<link xtargets="410;388" certainty="0.728268"></link>
+<link xtargets="411;389" certainty="-0.0897882"></link>
+<link xtargets="412;390" certainty="2.62636"></link>
+<link xtargets="413;391" certainty="0.907677"></link>
+<link xtargets="414;392" certainty="-0.337624"></link>
+<link xtargets="415;393" certainty="1.22498"></link>
+<link xtargets="416;394" certainty="1.46758"></link>
+<link xtargets="417;395" certainty="6.75832"></link>
+<link xtargets="418;396" certainty="0.535595"></link>
+<link xtargets="419;397" certainty="4.27099"></link>
+<link xtargets="420;398" certainty="0.83182"></link>
+<link xtargets="421;399" certainty="0.482913"></link>
+<link xtargets="422;400" certainty="0.789804"></link>
+<link xtargets="423;401" certainty="0.771088"></link>
+<link xtargets="424;402" certainty="2.47738"></link>
+<link xtargets="425;403" certainty="2.04385"></link>
+<link xtargets="426;404" certainty="0.314681"></link>
+<link xtargets="427;405" certainty="1.3503"></link>
+<link xtargets="428;406 407" certainty="4.18573"></link>
+<link xtargets="429;408" certainty="3.4175"></link>
+<link xtargets="430;409" certainty="4.43251"></link>
+<link xtargets="431;410" certainty="4.86357"></link>
+<link xtargets="432;411" certainty="0.53769"></link>
+<link xtargets="433;412" certainty="3.36009"></link>
+<link xtargets="434;413" certainty="2.79192"></link>
+<link xtargets="435;414" certainty="2.55884"></link>
+<link xtargets="436;415" certainty="1.74715"></link>
+<link xtargets="437;416" certainty="2.54232"></link>
+<link xtargets="438;417" certainty="5.15567"></link>
+<link xtargets="439;418" certainty="2.76851"></link>
+<link xtargets="440;419" certainty="1.34964"></link>
+<link xtargets="441;420" certainty="0.0943547"></link>
+<link xtargets="442;421" certainty="3.0885"></link>
+<link xtargets="443;422" certainty="5.71551"></link>
+<link xtargets="444;423" certainty="4.73184"></link>
+<link xtargets="445;424" certainty="2.92123"></link>
+<link xtargets="446;425" certainty="2.23959"></link>
+<link xtargets="447;426 427" certainty="4.44119"></link>
+<link xtargets="448;428" certainty="1.12754"></link>
+<link xtargets="449;429" certainty="6.41714"></link>
+<link xtargets="450;430" certainty="6.19881"></link>
+<link xtargets="451;431" certainty="1.82498"></link>
+<link xtargets="452;432" certainty="0.244019"></link>
+<link xtargets="453;433" certainty="3.784"></link>
+<link xtargets="454;434" certainty="4.61353"></link>
+<link xtargets="455;435" certainty="6.51602"></link>
+<link xtargets="456;436" certainty="5.52619"></link>
+<link xtargets="457;437" certainty="3.3531"></link>
+<link xtargets="458;438" certainty="0.22301"></link>
+<link xtargets="459;439" certainty="0.609789"></link>
+<link xtargets="460;440" certainty="-0.755292"></link>
+<link xtargets="461;441" certainty="3.17453"></link>
+<link xtargets="462;442 443" certainty="3.49499"></link>
+<link xtargets="463;444" certainty="0.892038"></link>
+<link xtargets="464;445" certainty="1.97311"></link>
+<link xtargets="465;446" certainty="3.08043"></link>
+<link xtargets="466;447 448" certainty="2.95502"></link>
+<link xtargets="467;449" certainty="0.325884"></link>
+<link xtargets="468;450" certainty="2.9908"></link>
+<link xtargets="469;451" certainty="3.79445"></link>
+<link xtargets="470;452" certainty="3.00419"></link>
+<link xtargets="471;453" certainty="3.78352"></link>
+<link xtargets="472;454" certainty="2.8195"></link>
+<link xtargets="473;455" certainty="6.72449"></link>
+<link xtargets="474;456 457" certainty="8.44701"></link>
+<link xtargets="475;458" certainty="3.03686"></link>
+<link xtargets="476;459" certainty="5.16095"></link>
+<link xtargets="477;460" certainty="2.81056"></link>
+<link xtargets="478;461" certainty="3.57321"></link>
+<link xtargets="479;462" certainty="4.33035"></link>
+<link xtargets="480;463" certainty="5.18945"></link>
+<link xtargets="481;464" certainty="2.21705"></link>
+<link xtargets="482;465" certainty="0.189451"></link>
+<link xtargets="483;466" certainty="2.18728"></link>
+<link xtargets="484;467" certainty="1.15193"></link>
+<link xtargets="485;468" certainty="2.04324"></link>
+<link xtargets="486;469" certainty="1.44951"></link>
+<link xtargets="487;470" certainty="1.64281"></link>
+<link xtargets="488;471 472" certainty="4.49643"></link>
+<link xtargets="489;473" certainty="0.522613"></link>
+<link xtargets="490;474" certainty="-0.748126"></link>
+<link xtargets="491;475 476" certainty="4.01088"></link>
+<link xtargets="492;477" certainty="1.39089"></link>
+<link xtargets="493;478" certainty="1.28382"></link>
+<link xtargets="494;479 480" certainty="1.16592"></link>
+<link xtargets="495;481" certainty="0.53769"></link>
+<link xtargets="496;482" certainty="3.3841"></link>
+<link xtargets="497;483" certainty="0.787706"></link>
+<link xtargets="498;484" certainty="1.368"></link>
+<link xtargets="499;485" certainty="5.12922"></link>
+<link xtargets="500;486" certainty="2.85569"></link>
+<link xtargets="501;487" certainty="2.26738"></link>
+<link xtargets="502;488" certainty="0.863081"></link>
+<link xtargets="503 504;489" certainty="1.69345"></link>
+<link xtargets="505 506;490" certainty="3.7645"></link>
+<link xtargets="507;491" certainty="0.994564"></link>
+<link xtargets="508;492" certainty="0.351574"></link>
+<link xtargets="509;493" certainty="2.0369"></link>
+<link xtargets="510;494" certainty="0.199105"></link>
+<link xtargets="511;495" certainty="-1.14418"></link>
+<link xtargets="512;496" certainty="1.57117"></link>
+<link xtargets="513;497" certainty="1.75376"></link>
+<link xtargets="514;498" certainty="1.19383"></link>
+<link xtargets="515;499" certainty="0.146479"></link>
+<link xtargets="516;500 501" certainty="3.99681"></link>
+<link xtargets="517 518;502" certainty="5.94445"></link>
+<link xtargets="519 520;503" certainty="4.43803"></link>
+<link xtargets="521;504" certainty="1.08293"></link>
+<link xtargets="522;505" certainty="5.63336"></link>
+</linkGrp>
+</linkList>
+</cesAlign>

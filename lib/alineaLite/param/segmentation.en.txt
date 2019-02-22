@@ -1,0 +1,10 @@
+# séparation des paragraphes (choisir \n ou \n\n)
+separePara=\n
+# liste des signes séparateurs de phrase
+listeSeparateurs=. ; : ? !
+# liste des abréviations susceptibles de se terminer par un point (séparer les éléments par un espace)
+listeAbreviations=Dr eg v doc Co Prof MR MRS 
+# liste des signes considérés comme espacements pour la tokenisation (séparer les éléments par un espace) \t=tabulation \s=espace \n=nouvelle ligne
+listeEspacements=\t \s \n
+# liste des separateurs susceptibles de figurer dans des expressions numériques ex.  4,3434 ou 20/10/2003
+listeSeparateursNum=. , - /

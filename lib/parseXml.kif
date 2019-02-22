@@ -1,0 +1,98 @@
+//Tout d'abord, il faut comprendre que l'ensemble du document est désormais en mémoire
+
+// -kifargs $fileName $outputFileName $grmFile $wrappingElement
+
+//on déclare un parseur
+
+// _args[2] doit indiquer le fichier de grammaire '/home/kraifo/Documents/Recherches/Développement/Xip2/xip-13.00-25/grammar/french/basic/french_entity.grm'
+
+parser language(_args[2]);
+language.addoption(XIP_WORDNUM);
+
+string s,wrappingElement;
+
+wrappingElement=_args[3];
+
+vector v;
+
+function explore (xml n, self x) {
+     if (n.name()==wrappingElement) {
+          v.push(n);
+     }
+}
+
+ 
+
+xmldoc doc with explore;
+
+doc.load(_args[0]);
+
+xml n, nf;
+
+ssmap attributs;
+
+int compteur,i;
+
+string newContent,chunk; 
+
+vector chunks;
+ 
+
+for (n in v) {
+
+     try {
+         s=language.parse(n.content());
+     } catch {
+    
+         newContent=n.content();
+         chunks=newContent.split(",",chunks);
+         newContent=chunks[0];
+         i=0;
+         for (chunk in chunks[1:]) {
+             i++;
+             if (i%5==0) {
+                 newContent+="."+chunk;
+             } else {
+                 newContent+=","+chunk;
+             }
+         }
+         //print (newContent);
+         try {
+             s=language.parse(newContent);
+             print("A comma has been replaced by a point in"+newContent+" (sent num "+compteur+")\n");
+         } catch {
+              print("Prob with "+newContent+" in sent num "+compteur+"\n");
+         }
+     }
+
+     //On crée une nouvelle balise XML dont le nom est Analyse
+
+     nf.new("Analyse");
+
+     //On place le résultat de l'analyse comme contenu textuel de cette balise
+
+     nf.content(s);    
+
+     //On va se créer de quoi rajouter des propriétés (ou attributs) à notre balise
+
+     attributs["num"]=compteur;
+
+     //On rajoute ce map comme propriété de notre nouvelle balise
+
+     // <Analyse num="1">....</Attribut>
+
+     nf.properties(attributs);
+
+     //et enfin on rajoute cette balise sous la balise courante
+
+     n.child(nf);
+
+     compteur++;
+
+}
+
+ 
+
+//Puis on crée notre nouveau fichier qui contiendra alors les annotations...
+
+doc.save(_args[1],"utf-8");

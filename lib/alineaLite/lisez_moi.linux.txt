@@ -1,0 +1,102 @@
+Alinea Lite 2.0 (c) Olivier Kraif 2000-2004
+
+
+1. Introduction
+===========
+
+Alinea Lite 2.0 est une version simplifiée de Alinea, logiciel d'alignement de corpus bilingue parallèle. Alinea fonctionne sous Windows 32 et sous Linux en mode ligne de commande.
+
+2. Licence d'utilisation
+================
+Alinea Lite 2.0 est distribué gratuitement. L'auteur se dégage de toute responsabilité quant à l'utilisation publique ou privée de ce logiciel. 
+L'utilisateur assume  l'installation et l'exécution de ce logiciel sur son ordinateur à ses risques et périls. L'auteur ne pourra en aucun cas être tenu responsable d'un quelconque dommage relatif à des données ou à du matériel informatique consécutif à l'utilisation de ce logiciel.
+L'auteur ne s'engage pas à en assurer le suivi et le débogage. 
+
+Toutefois, vous pouvez envoyer vos remarques et suggestions à :
+
+Olivier.Kraif@u-grenoble3.fr
+
+3. Installation
+==========
+
+Extraire l'archive alinea-Lite-2.0.zip dans le dossier de votre choix.
+
+4. Syntaxe de la ligne de commande
+==========================
+
+Sous Windows :
+-----------
+
+Lancer command.exe ou cmd.exe pour ouvrir la console de ligne de commande. Ouvrir le répertoire d'alinea, puis lancer alinea.exe avec ses paramètres
+La ligne de commande pourra aussi être enregistrée dans un fichier .bat qu'il suffira alors d'exécuter.
+
+Sous Linux :
+-----------
+Ouvrir un terminal. S'assurer que vous disposer des droits en exécution sur alinea et en lecture sur tous les fichiers du dossier param
+
+
+Synopsis
+--------
+
+USAGE : 
+
+alinea FILE1 FILE2 [OPTIONS]
+
+Options :
+
+          --alinea_dir ALINEA_DIR (eg. /usr/local/alinea)
+          --format1 FILE1_FORMAT (txt|ces|html|tmx|bitxt|dat|ttg|txs|xip|xml)
+          --format2 FILE2_FORMAT (txt|ces|html|tmx|bitxt|dat|ttg|txs|xip|xml)
+          --encoding1 FILE1_ENCODING (UTF-8|ISO-Latin-1|UTF-16)
+          --encoding2 FILE2_ENCODING (UTF-8|ISO-Latin-1|UTF-16)
+          --anchor_points_file ANCHOR_POINTS_FILE
+          --anchor_points_format ANCHOR_POINTS_FORMAT (dat|ces)
+          --preal_tag PREALIGNING_TAG (eg. p)
+          --container_tag (eg. body)
+          --id_attr IDENTIFIER_ATTRIBUTE (default=id)
+          --segmentation_tag SEGMENTATION_TAG (default=s)
+          --tokenization_tag (default=t)
+          --internal_segmentation
+          --output_file OUTPUT_FILENAME
+          --output_format OUTPUT_FORMAT (cesalign|html|tmx|full_tmx|txt|txt12|txt_corr)
+          --output_encoding OUTPUT_ENCODING
+          --save_dat (yes|no)
+          --verbose (yes|no)
+
+Nota Bene
+----------
+
+Pour une meilleure cohérence, nommez vos fichiers suivant le schéma : NOM.L1.EXT et NOM.L2.EXT
+
+
+5. Formats supportés
+===============
+
+Des échantillons de chacun de ces formats sont fournis en exemple (cf. fichiers bovary.chap1-3.* dans le dossier Exemples)
+
+Formats d'entrée
+---------------------
+
+txt	: format texte brut
+
+cesana	: format cesana avec segmentation en phrases, et avec ou sans tokenisation
+
+txs : format XML étiqueté
+
+ttg : sorties de treetagger
+
+xip : sorties de XIP
+
+
+Formats de sortie
+----------------------
+
+txt	: format texte brut dans un seul fichier
+
+txt12 : texte brut sur deux fichiers
+
+ces : format cesalign
+
+html : format html
+
+tmx : format XML d'interchange pour les mémoires de traduction

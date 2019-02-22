@@ -1,0 +1,11 @@
+Stoplists pour les langues suivantes :
+
+ar : arabe
+bg : bulgare
+cs : tchèque
+de : allemand
+fi : finnois
+ru : russe
+sv : suédois
+
+cf. http://www.unine.ch/info/clef/

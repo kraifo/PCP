@@ -1,0 +1,5 @@
+Balises analysables externes	html body div p h1 h2 h3 h4 h5 h6 thead table tr form label ul ol li textarea br hr
+Balises analysables internes	a span font b i s input
+Balises non analysables externes	head td th
+Balises non analysables internes	script object embed
+Par défaut (donner le numéro de ligne correspondant)	2
