@@ -1,0 +1,12 @@
+﻿# Nota bene : Les règles sont appliquées itérativement en tête de chaine.  
+# L'ordre des règles est pertinent : à chaque application d'une règle, on réitère en repartant de la première.
+# Une tabulation doit séparer la définition du type du token de l'expression régulière (ou du nom de dictionnaire)
+# Ne pas laisser d'espace à la fin de la ligne (on peut éventuellement ajouter une tabulation et un commentaire)
+
+# Deux types de règles :
+
+# règle de dictionnaire
+<token type="xxxxx">	<DICONAME>
+
+# règle d'expression régulière
+<token type="yyyyy">	REGEX

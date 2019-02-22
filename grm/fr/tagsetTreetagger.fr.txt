@@ -1,0 +1,13 @@
+# correspondance entre tagset simplifié et tagset treetagger
+NOM	NOM
+VER	VER
+PRO	PRO
+PRE	PRP
+DET	DET
+ADJ	ADJ
+CC	KON
+CS	KON
+NPR	NAM
+PON	PUN
+ADV	ADV
+NUM	NUM

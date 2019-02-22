@@ -1,0 +1,30 @@
+﻿# Attention : 
+# 1/ Les parenthèses de groupement ne doivent pas être capturantes : ajouter (?: ... ). 
+# 2/ L'ordre des règles est pertinent.
+# 3/ Une tabulation doit séparer la définition du type du token de l'expression régulière (ou non terminale)
+
+# on commence par traiter les mots composés en fonction du dico disponible
+<token type="compound">	<compounds>
+
+# cas des balises xml : <tag>
+<token type="tag">	(?:<[^>]+>)
+
+# cas des entités : &entity;
+<token type="entity">	(?:&\w+;)
+
+# cas général d'abbréviation : Majuscule suivie de point éventuellement réitérées, éventuellement séparée par tiret
+<token type="abb">	(?:[A-Z]+\.\-?)+
+
+# on traite ensuite les abréviations en fonction du dico disponible
+<token type="abbrev">	<abbrev>
+
+# traitement du _ : à améliorer (en fin de mot)
+<token type="ponct">	(?:_)
+
+# cas général : un mot peut inclure des caractères alphanumériques, des tirets (porte-monnaie), et se terminer par une apostrophe
+<token type="word">	(?:\w+(?:[\-]\w+)*'?)
+
+<token type="ponct">	(?:--)
+
+# définition de la ponctuation de base - à enrichir pour intégrer d'autres guillemets, etc.
+<token type="ponct">	[.!?,;:"\(\)]

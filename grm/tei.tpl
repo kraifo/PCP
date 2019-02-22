@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<h.title>{{h.title}}</h.title>
+				<respStmt>
+					<respType>{{respType}}</respType>
+					<respName>{{respName}}</respName>
+				</respStmt>
+			</titleStmt>
+			<editionStmt version='1'></editionStmt>
+			<extent>
+				<wordCount></wordCount>
+				<byteCount units="bytes"></byteCount>
+			</extent>
+			<publicationStmt>
+				<distributor>{{distributor}}</distributor>
+				<pubAddress>{{pubAddress}}</pubAddress>
+				<telephone>{{telephone}}</telephone>
+				<fax>{{fax}}</fax>
+				<eAddress>{{eAdress}}</eAddress>
+				<availability>{{availability}}</availability>
+				<pubDate>{{pubDate}}</pubDate>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<h.title>{{analytic.title}}</h.title>
+						<h.author>{{author}}</h.author>
+					</analytic>
+					<monogr>
+						<h.title>{{monogr.title}}</h.title>
+						<respStmt>
+							<respType>{{respType}}</respType>
+							<respName>{{respName}}</respName>
+						</respStmt>
+						<imprint>
+							<pubPlace>{{pubPlace}}</pubPlace>
+							<publisher>{{publisher}}</publisher>
+							<pubDate>{{date}}</pubDate>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<projectDesc>
+				{{projectDesc}}
+			</projectDesc>
+			<samplingDecl>
+				{{samplingDecl}}
+			</samplingDecl>
+			<editorialDecl>
+				<conformance>
+					{{conformance}}
+				</conformance>
+				<correction status="medium" method="silent"></correction>
+				<quotation marks="none" form="std">
+				</quotation>
+				<segmentation>
+					{{segmentation}}
+				</segmentation>
+			</editorialDecl>
+			<tagsDecl>
+			</tagsDecl>
+		</encodingDesc>    
+		<profileDesc>
+			<langUsage>
+				<language id="{{languageID}}" iso639="{{languageID}}">{{language}}</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			{{content}}
+		</body>
+	</text>
+</TEI>

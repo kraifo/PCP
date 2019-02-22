@@ -1,0 +1,18 @@
+# traduction en français des tags de treetagger
+NOM	Nom
+VER	Verbe
+PRO	Pronom
+PRP	Préposition
+DET	Déterminant
+ADJ	Adjectif
+KON	Conjonction
+NAM	Nom propre
+PUN	Ponctuation
+ADV	Adverbe
+NUM	Nombre
+pres	présent
+impf	imparfait
+futu	futur
+cond	conditionnel
+pper	participe passé
+infi	infinitif

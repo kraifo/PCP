@@ -1,0 +1,21 @@
+# correspondance entre tagset simplifié et tagset treetagger
+NOM	NN
+NOM	NN
+VER	VVD
+VER	VHG
+VER	VHZ
+VER	VVN
+VER	VBZ
+VER	VBP
+VER	V\w\w
+PRO	PP\$?
+PRE	IN
+PRE	TO
+DET	DT
+ADJ	JJ\w?
+CC	CC
+CS	CS
+NPR	NP
+NPR	NPS
+ADV	RB
+NUM	CD
