@@ -1,87 +1,76 @@
-
+windows=0
 verbose=1
-latency=0.5
-sourceId='revuepsy'
-targetDir="./data/revuepsy/html" 
-url='https://www.cairn.info/revue-research-in-psychoanalysis.htm'
-urlPattern=qr/^https:..www.cairn.info.revue-recherches-en-psychanalyse-201\d-\d+(-page-\d+)?.htm/ #liens à parcourir 
-#exemple des liens a parcourir: https://www.cairn.info/revue-recherches-en-psychanalyse-2012-2-page-114.htm
+sourceId='signata'
+targetDir="./data/signata/html"
+url='http://journals.openedition.org/signata/'
+urlPattern=qr/http:..journals.openedition.org.signata.\d+$/
 
-
-correspondingUrlPattern={"en"=>qr/<div class="article greybox_hover" id="REP_[^"]*?">\s*?<div class="authors">\s*?<span class="author">\s+<a class="yellow" href="([^"]*)">.*?<a\s*href="(?<href1>[^"]*?)".*?<div class="article greybox_hover" id="REP_[^"]*?">\s*?<div class="authors">\s*?<span class="author">\s+<a class="yellow" href="(\1)">.*?<a\s*href="(?<href2>[^"]*?)"/}
-
-#~ blackListUrlPattern=qr//
-#~ paginationUrlPattern=qr/lejournal.cnrs.fr\/articles([^\/]|$)/
 resetCrawling=1
 limitDepth=3
-#noFormData=1
 downloadIfAligned=1
-alignedUrlTransformationScheme={'en'=>[qr/[.]htm/,'a.htm']}
-#~ alignedUrlTransformationScheme={'en'=>[qr/page-(\d+)[.]htm/,'page-".($1+1).".htm']}
-contentPattern=qr/<!-- DEBUT DU CONTENU DE L'ARTICLE -->(.*?)<!-- FIN DU CONTENU DE L'ARTICLE -->/s
-namePattern=[qr/www.cairn.info.revue-recherches-en-psychanalyse-(.*).htm/]
-nameBase='url'
-
+alignedUrlWithContextPatterns={en=>qr/<link title=".*?" type="text\/html" rel="alternate" hreflang="en" href="(.*?)"/}
+# alignedUrlTransformationScheme={'en'=>[qr/(http:.*\d+)/,'$1?lang=en']}
+contentPattern=qr/<meta http-equiv="Content-language" content="(?:fr|en)" \/>.*<!-- #widgets -->(.*)<\/div><!-- .text wResizable -->/s
+namePattern=[qr/<title>(.*?)<\/title>/]
+nameBase='content'
 inputEncoding='utf8'
 outputEncoding='utf8'
 metadataPatterns=[
-	{label=>'analytic.title',base=>'content',search=>qr/<!--field: Titre-->(.*?)<!--field: -->/s},
-	{label=>'authors',base=>'content',search=>qr/<!--field: Auteur-->(.*?)<!--field: -->/s},
-	{label=>'year',base=>'content',search=>qr/<meta name="citation_year" content="(.*?)">/s},
-	{label=>'date',base=>'content',search=>qr/<meta name="citation_online_date" content="(.*?)">/s},
-	{label=>'firstPage',base=>'content',search=>qr/<meta name="citation_firstpage" content="(.*?)">/s},
-	{label=>'lastPage',base=>'content',search=>qr/<meta name="citation_lastpage" content="(.*?)">/s},
-	{label=>'publisher',base=>'content',search=>qr/<meta name="citation_publisher" content="(.*?)">/s},
-	{label=>'monogr.title',base=>'content',search=>qr/<meta name="citation_journal_title" content="(.*?)">/s},
-	{label=>'volume',base=>'content',search=>qr/<meta name="citation_volume" content="(.*?)">/s},
-	{label=>'language',base=>'content',search=>qr/<meta name="citation_language" content="(.*?)">/s},
-	{label=>'languageId',base=>'content',search=>qr/<meta name="citation_language" content="(.*?)">/s},
-	{label=>'bibl',base=>'content',search=>qr/<span class="blue_milk" id="apa">(.*?)<\/span>\s*<a/s},
+	{label=>'authors',base=>'content',search=>qr/<meta name="citation_authors" content="(.*?)"-->/s},
+	{label=>'publicationDate',base=>'content',search=>qr/<meta name="citation_publication_date" content="(.*?)"/s},
+	{label=>'date',base=>'content',search=>qr/<meta name="citation_online_date" content="(.*?)"/s},
+	{label=>'publisher',base=>'content',search=>qr/<meta name="citation_publisher" content="(.*?)"/s},
+	{label=>'volume',base=>'content',search=>qr/<meta name="citation_issue" content="(.*?)"/s},
+	{label=>'language',base=>'content',search=>qr/<meta name="citation_language" content="(.*?)"/s},
+	{label=>'languageId',base=>'content',search=>qr/<meta name="citation_language" content="(.*?)"/s},
+	{label=>'bibl',base=>'content',search=>qr/<div id="quotation" class="section">.*?<p>(.*?)<\/p>/s},
 	]
 metadataFilePattern=[qr/(.*)/,'$1.meta']
 
-maxRecordedPages=2000
+maxRecordedPages=10000
 sourceLanguage="fr"
 
-->addSource()
-
-#~ ->runCrawler()
-
-
+#->addSource()
+#->runCrawler()
 
 #****************************** cleaning boilerplate html 
-inputDir="./data/revuepsy/html"
-outputDir="./data/revuepsy/html2"
+inputDir="./data/signata/html"
+outputDir="./data/signata/html2"
 filePattern=qr/html$/
 outputFileName=[qr/[.]html/,'.html']
-searchReplacePatterns=[[qr/<[^>]*>Partager<[^>]*>/,""]]
-#~ ->findAndReplace({overwriteOutput=>1})
+searchReplacePatterns=[
+	[qr/(<span class="paranumber">\d*?<\/span>)/,'$1 '],
+	[qr/<div class="textIcon">.*?<\/p>\s*<\/div>/s,""],
+	[qr/<div class="textIcon">.*?<\/a><\/div>\s*<\/div>/s,""],          
+	[qr/<span class="num">.*?<\/span>/,""],
+	[qr/<ul class="sidenotes">.*?<\/ul>/s,""],
+	[qr/<a class="footnotecall".*?<\/a>/,""]
+	]
 
-
+->findAndReplace({overwriteOutput=>0})
 #****************************** converting html to text
 
-inputDir="./data/revuepsy/html"
-outputDir="./data/revuepsy/txt"
+inputDir="./data/signata/html2"
+outputDir="./data/signata/txt"
 filePattern=qr/html$/
 outputFileName=[qr/[.]html/,'.txt']
 fileEncoding="utf8"
 
 
-#~ ->html2txt({overwriteOutput=>1})
+->html2txt({overwriteOutput=>0})
 ->next()
 
 #****************************** adding <p> tags
 # parameter :
 # - noEmptyPara : boolean - if 1, consecutive ends of line will yield only one tag
 
-
-outputDir="./data/revuepsy/para"
+outputDir="./data/signata/para"
 filePattern=qr/txt$/
 outputFileName=[qr/(.*)[.]txt$/i,'$1.txt']
 noEmptyPara=1
 escapeMeta2Entities=1
 
-#~ ->addParaTag({overwriteOutput=>1})
+->addParaTag({overwriteOutput=>1})
 ->next()
 
 #****************************** tokenize raw txt files
@@ -96,20 +85,20 @@ escapeMeta2Entities=1
 # - defaultRules : the set of default rules that are used to tokenize without a specific (see PerlNLPToolKit.pm for more details on the rules)
 
 
-outputDir="./data/revuepsy/tok"
+outputDir="./data/signata/tok"
 language='fr'
 filePattern=qr/fr[.]txt$/
 outputFileName=[qr/(.*)[.]txt$/,'$1.tok']
 newLineTag=''
 
-#~ ->tokenize({overwriteOutput=>1})
+->tokenize({overwriteOutput=>1})
 
 language='en'
 filePattern=qr/en[.]txt$/
 outputFileName=[qr/(.*)[.]txt$/,'$1.tok']
 newLineTag=''
 
-#~ ->tokenize({overwriteOutput=>1})
+->tokenize({overwriteOutput=>1})
 ->next()
 
 # ****************************** tagging files
@@ -126,19 +115,19 @@ newLineTag=''
 
 filePattern=qr/(.*).fr.tok$/
 treetaggerLanguage="french-utf8"
-outputDir="./data/revuepsy/ttg"
+outputDir="./data/signata/ttg"
 outputFileName=[qr/(.*).tok$/i,'$1.ttg']
 tokenize=0
 supprSpcTag=1
 sentMark="SENT"
 addSentTag=1
 
-#~ ->runTreetagger({overwriteOutput=>1})
+->runTreetagger({overwriteOutput=>1})
 
 filePattern=qr/(.*).en.tok$/
 treetaggerLanguage="english-utf8"
 
-#~ ->runTreetagger({overwriteOutput=>1})
+->runTreetagger({overwriteOutput=>1})
 ->next()
 
 # ****************************** converting to TEI
@@ -152,28 +141,28 @@ treetaggerLanguage="english-utf8"
 
 template='./grm/tei.revue.tpl'
 filePattern=qr/(.*).ttg$/
-outputDir="./data/revuepsy/tei"
+outputDir="./data/signata/tei"
 outputFileName=[qr/(.*).ttg$/i,'$1.xml']
 dataFilePattern=[qr/ttg\/(.*extract.\w\w)[.]ttg/,'html/$1.html.meta']
 data={
-	'h.title'=>"Corpus Bilingue Revue de recherche en psychanalyse",
+	'h.title'=>"Corpus Bilingue Revue Signata",
 	respType=>"Téléchargé en parallèle par",
-	respName=>"Olivier Kraif",
+	respName=>"Dorian Bellanger",
 	distributor=>"Université Grenoble Alpes",
-	pubDate=>"2017",
+	pubDate=>"2018",
 	samplingDecl=>"full paper",
 	segmentation=>"paragraph and sentence level",
 	}
 
-#~ ->applyTemplate({overwriteOutput=>1})
+->applyTemplate({overwriteOutput=>1})
 
 
 # ****************************** extracting stats 
 
 
-inputDir='./data/revuepsy/ttg'
+inputDir='./data/signata/ttg'
 filePattern=qr/(.*)fr.ttg$/
-outputDir='./data/revuepsy/stats.fr'
+outputDir='./data/signata/stats.fr'
 inputFormat="ttg"
 outputFormat="csv"
 global=1
@@ -181,7 +170,7 @@ global=1
 ->anaText({overwriteOutput=>1})
 
 filePattern=qr/(.*)en.ttg$/
-outputDir='./data/revuepsy/stats.en'
+outputDir='./data/signata/stats.en'
 inputFormat="ttg"
 outputFormat="csv"
 global=1
